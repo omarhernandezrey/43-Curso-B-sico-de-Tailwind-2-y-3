@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css",
+  "dev": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
+  "serve": "live-server public"
+},
+
   "author": "",
   "license": "ISC",
   "devDependencies": {

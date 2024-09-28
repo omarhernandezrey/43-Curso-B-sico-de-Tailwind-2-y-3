@@ -562,7 +562,20 @@ video {
   width: 16rem;
 }
 
-.bg-red-900 {
+.bg-terciary {
   --tw-bg-opacity: 1;
-  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
+  background-color: rgb(97 174 201 / var(--tw-bg-opacity));
+}
+
+.font-Montserrat {
+  font-family: Montserrat, sans-serif;
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }

@@ -3,18 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css",
-  "dev": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
-  "serve": "live-server public"
-},
-
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css",
+    "dev": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
+    "serve": "live-server public"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.41",
-    "tailwindcss": "^3.4.9"
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13"
   }
 }

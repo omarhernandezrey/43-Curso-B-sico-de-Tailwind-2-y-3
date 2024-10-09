@@ -4,43 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/tailwind.css"> <!-- Verifica la ruta correcta -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <title>Gogo Travel</title>
 </head>
-<body>
+<body class="font-Montserrat"> <!-- Usa la fuente Montserrat configurada -->
     <nav></nav>
     <div id="tab_bar"></div>
 
     <section class="w-full h-screen">
         <div id="home">
             <div class="w-full h-3/4">
-                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                    <input 
-                        class="outline-none p-3 rounded-full shadow-sm" 
-                        placeholder="San Francisco" 
-                        type="search" 
-                        name="" 
-                        id=""
-                        aria-label="Buscar destino"
-                    >
-                    <button class="w-36 rounded-full text-xl text-primary shadow-sm font-semibold p-4 bg-white">
-                        Explorar
-                    </button>
-                </div>
-                <div class="w-full h-full">
-                    <img src="./img/sanFrancisco.jpg" alt="San Francisco">
-                </div>
+              <!--BOTONES-->
+              <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
+                <input class="w-48 outline-none p-3 rounded-full shadow-sm text-center transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco" type="search" id="">
+                <button class="bg-white text-lg w-48 h-auto p-3 lg:ml-16 rounded-full shadow-md font-semibold text-primary transition-all duration-700 ease-in-out hover:bg-primary hover:text-secondary" id='explore-more'>
+                  Explorar
+                </button>
+              </div>
+              <!--IMAGEN-->
+              <div class="w-full h-full bg-contain  ">
+                <img src="img/sanFrancisco.jpg" alt="San Francisco"> <!-- Verifica la ruta de la imagen -->
+              </div>
             </div>
-        </div>
+          </div>
         <div class="p-6" id="recomendados">
             <p class="text-3xl font-semibold text-primary">Recomendados</p>
-            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6">
+            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6  overflow-y-hidden">
                 <div class="Card">
-                    <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+                    <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div> <!-- Verifica que el fondo de Norway esté bien definido -->
                     <div class="w-full h-2/5 bg-secondary rounded-b-lg">
                         <p class="text-white font-bold text-xl px-4 py-2">Norway</p>
                         <p class="text-white px-4">Paisajes Increíbles</p>
@@ -48,7 +43,7 @@
                 </div>
 
                 <div class="Card">
-                    <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
+                    <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div> <!-- Verifica que el fondo de New York esté bien definido -->
                     <div class="w-full h-2/5 bg-white rounded-b-lg">
                         <p class="text-terciary font-bold text-xl px-4 py-2">New York</p>
                         <p class="text-terciary px-4">La gran manzana</p>

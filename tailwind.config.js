@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./public/**/*.html", "./src/**/*.{html,js}"], // Asegura que Tailwind analice todos los archivos necesarios
+  content: ["./public/**/*.html", "./src/**/*.{html,js}"], // Asegúrate que Tailwind procese los archivos correctos
   theme: {
     extend: {
       backgroundImage: {
@@ -32,6 +32,9 @@ module.exports = {
         Montserrat: ["Montserrat", "sans-serif"],
       },
     },
+  },
+  variants: {
+    width: ["responsive", "hover", "focus"],
   },
   plugins: [],
 };

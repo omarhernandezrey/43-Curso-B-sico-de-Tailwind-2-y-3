@@ -15,7 +15,7 @@
     <nav></nav>
     <div id="tab_bar"></div>
 
-    <section class="w-full h-screen">
+    <section class="w-full h-screen px-4 md:px-16 lg:px-24 pb-8 md:pb-16 lg:pb-24">
         <div id="home">
             <div class="w-full h-3/4">
               <!--BOTONES-->
@@ -26,33 +26,107 @@
                 </button>
               </div>
               <!--IMAGEN-->
-              <div class="w-full h-full bg-contain  ">
+              <div class="w-full h-full bg-contain">
                 <img src="img/sanFrancisco.jpg" alt="San Francisco"> <!-- Verifica la ruta de la imagen -->
               </div>
             </div>
           </div>
         <div class="p-6" id="recomendados">
             <p class="text-3xl font-semibold text-primary">Recomendados</p>
-            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6  overflow-y-hidden">
-                <div class="Card">
-                    <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div> <!-- Verifica que el fondo de Norway esté bien definido -->
-                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
-                        <p class="text-white font-bold text-xl px-4 py-2">Norway</p>
-                        <p class="text-white px-4">Paisajes Increíbles</p>
-                    </div>
+            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
+                
+              <div class="Card">
+                <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+                <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <p class="text-white font-bold text-xl px-4 py-2">Norway</p>
+                    <p class="text-white px-4">Paisajes increíbles</p>
                 </div>
+              </div>
+            
+              <div class="Card">
+                <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
+                <div class="w-full h-2/5 bg-terciary rounded-b-lg">
+                    <p class="text-white font-bold text-xl px-4 py-2">New York</p>
+                    <p class="text-white px-4">La Gran Manzana</p>
+                </div>
+              </div>
+            
+              <div class="Card">
+                <div class="w-full h-3/5 rounded-t-lg bg-sanFrancisco bg-cover"></div>
+                <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <p class="text-white font-bold text-xl px-4 py-2">San Francisco</p>
+                    <p class="text-white px-4">El Puente Golden Gate</p>
+                </div>
+              </div>
+            
+              <div class="Card">
+                <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
+                <div class="w-full h-2/5 bg-terciary rounded-b-lg">
+                    <p class="text-white font-bold text-xl px-4 py-2">Seattle</p>
+                    <p class="text-white px-4">Ciudad Esmeralda</p>
+                </div>
+              </div>
+            
+              <div class="Card">
+                <div class="w-full h-3/5 rounded-t-lg bg-LA bg-cover"></div>
+                <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <p class="text-white font-bold text-xl px-4 py-2">Los Angeles</p>
+                    <p class="text-white px-4">La Ciudad de las Estrellas</p>
+                </div>
+              </div>
+            
+              <div class="Card">
+                <div class="w-full h-3/5 rounded-t-lg bg-miami bg-cover"></div>
+                <div class="w-full h-2/5 bg-terciary rounded-b-lg">
+                    <p class="text-white font-bold text-xl px-4 py-2">Miami</p>
+                    <p class="text-white px-4">Playas y Sol</p>
+                </div>
+              </div>
+            
+              <div class="Card">
+                <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
+                <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <p class="text-white font-bold text-xl px-4 py-2">Suiza</p>
+                    <p class="text-white px-4">Alpes Suizos</p>
+                </div>
+              </div>
+            
+              <div class="Card">
+                <div class="w-full h-3/5 rounded-t-lg bg-bali bg-cover"></div>
+                <div class="w-full h-2/5 bg-terciary rounded-b-lg">
+                    <p class="text-white font-bold text-xl px-4 py-2">Bali</p>
+                    <p class="text-white px-4">Isla de los Dioses</p>
+                </div>
+              </div>
+            
+              <div class="Card">
+                <div class="w-full h-3/5 rounded-t-lg bg-iceland bg-cover"></div>
+                <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                    <p class="text-white font-bold text-xl px-4 py-2">Islandia</p>
+                    <p class="text-white px-4">Tierra de Hielo y Fuego</p>
+                </div>
+              </div>
 
-                <div class="Card">
-                    <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div> <!-- Verifica que el fondo de New York esté bien definido -->
-                    <div class="w-full h-2/5 bg-white rounded-b-lg">
-                        <p class="text-terciary font-bold text-xl px-4 py-2">New York</p>
-                        <p class="text-terciary px-4">La gran manzana</p>
-                    </div>
-                </div>
             </div>
         </div>
         
-        <div id="rentas_destacadas"></div>
+        <div class="px-16 h-full w-full pb-8 md:pb-16 lg:pb-24" id="rentas_destacadas">
+          <p class="text-3xl text-primary font-semibold pb-6 mt-6">Rentas Destacadas</p>
+         
+          <div class="w-full h-full flex flex-col space-y-6 items-center justify-center">
+
+            <div class="w-full h-96 bg-chicago bg-cover rounded-xl m-6">
+              <p class="CardTitle">Chicago</p>
+              <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina</p>
+            </div>
+
+            <div class="w-full h-96 bg-chicago bg-cover rounded-xl m-6">
+                <p class="CardTitle">Chicago</p>
+                <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina</p>
+            </div>
+
+          </div>
+        </div>
     </section>
 
     <footer></footer>

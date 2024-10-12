@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/tailwind.css"> <!-- Verifica la ruta correcta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="css/tailwind.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <title>Gogo Travel</title>
 </head>
-<body class="font-Montserrat"> <!-- Usa la fuente Montserrat configurada -->
+<body class="font-Montserrat"> 
     <nav></nav>
     <div id="tab_bar"></div>
 
     <section class="w-full h-screen px-4 md:px-16 lg:px-24 pb-8 md:pb-16 lg:pb-24">
-        <div id="home">
-            <div class="w-full h-3/4">
-              <!--BOTONES-->
-              <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                <input class="w-48 outline-none p-3 rounded-full shadow-sm text-center transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco" type="search" id="">
-                <button class="bg-white text-lg w-48 h-auto p-3 lg:ml-16 rounded-full shadow-md font-semibold text-primary transition-all duration-700 ease-in-out hover:bg-primary hover:text-secondary" id='explore-more'>
-                  Explorar
-                </button>
-              </div>
-              <!--IMAGEN-->
-              <div class="w-full h-full bg-contain">
-                <img src="img/sanFrancisco.jpg" alt="San Francisco"> <!-- Verifica la ruta de la imagen -->
-              </div>
-            </div>
+      <div id="home">
+        <div class="w-full h-[100vh] relative">
+          <!-- BOTONES -->
+          <div class="w-full h-full flex flex-col absolute py-4 items-center space-y-32 sm:space-y-96"> <!-- Más espacio en móvil -->
+            <input class="w-48 outline-none p-3 rounded-full shadow-sm text-center transition-all duration-300 focus:shadow-lg focus:ring-2 focus:w-11/12" placeholder="San Francisco" type="search" id="">
+            <button class="bg-white text-lg w-48 h-auto p-3 rounded-full shadow-md font-semibold text-primary transition-all duration-700 ease-in-out hover:bg-primary hover:text-secondary" id='explore-more'>
+              Explorar
+            </button>
           </div>
+          <!-- IMAGEN -->
+          <div class="w-full h-full">
+            <img src="img/sanFrancisco.jpg" alt="San Francisco" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+      
+
+      
+      
         <div class="p-6" id="recomendados">
             <p class="text-3xl font-semibold text-primary">Recomendados</p>
             <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
@@ -113,22 +117,46 @@
         <div class="px-16 h-full w-full pb-8 md:pb-16 lg:pb-24" id="rentas_destacadas">
           <p class="text-3xl text-primary font-semibold pb-6 mt-6">Rentas Destacadas</p>
          
-          <div class="w-full h-full flex flex-col space-y-6 items-center justify-center">
+          <div class="w-full h-full grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 items-center justify-center">
 
-            <div class="w-full h-96 bg-chicago bg-cover rounded-xl m-6">
-              <p class="CardTitle">Chicago</p>
-              <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina</p>
+            <div class="w-full h-96 bg-chicago bg-cover rounded-2xl shadow-lg overflow-hidden relative">
+              <div class="w-full h-full bg-black bg-opacity-30 absolute top-0 left-0 rounded-2xl"></div>
+              <div class="p-6 z-10 relative text-white">
+                <p class="text-2xl font-bold">Chicago</p>
+                <p class="text-sm">2 Habitaciones, baño y cocina.</p>
+              </div>
             </div>
 
-            <div class="w-full h-96 bg-chicago bg-cover rounded-xl m-6">
-                <p class="CardTitle">Chicago</p>
-                <p class="text-sm pl-8 text-black mr-24">2 habitaciones, baño y cocina</p>
+            <div class="w-full h-96 bg-LA bg-cover rounded-2xl shadow-lg overflow-hidden relative">
+                <div class="w-full h-full bg-black bg-opacity-30 absolute top-0 left-0 rounded-2xl"></div>
+                <div class="p-6 z-10 relative text-white">
+                    <p class="text-2xl font-bold">Los Angeles</p>
+                    <p class="text-sm">4 Habitaciones, 3 baños, cocina y alberca privada.</p>
+                </div>
+            </div>
+
+            <div class="w-full h-96 bg-miami bg-cover rounded-2xl shadow-lg overflow-hidden relative">
+              <div class="w-full h-full bg-black bg-opacity-30 absolute top-0 left-0 rounded-2xl"></div>
+              <div class="p-6 z-10 relative text-white">
+                <p class="text-2xl font-bold">Miami</p>
+                <p class="text-sm">4 Habitaciones, 3 baños, cocina y excelente vista al mar.</p>
+              </div>
+            </div>
+
+            <div class="w-full h-96 bg-bali bg-cover rounded-2xl shadow-lg overflow-hidden relative">
+              <div class="w-full h-full bg-black bg-opacity-30 absolute top-0 left-0 rounded-2xl"></div>
+              <div class="p-6 z-10 relative text-white">
+                <p class="text-2xl font-bold">Bali</p>
+                <p class="text-sm">2 Habitaciones, baño, cocina y piscina privada.</p>
+              </div>
             </div>
 
           </div>
         </div>
+        
     </section>
 
     <footer></footer>
+
 </body>
 </html>

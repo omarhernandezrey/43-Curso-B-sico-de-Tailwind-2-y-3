@@ -15,7 +15,7 @@
     <nav></nav>
     <div id="tab_bar"></div>
 
-    <section class="w-full h-screen px-4 md:px-16 lg:px-24 pb-8 md:pb-16 lg:pb-24">
+    <section class="w-full h-auto px-4 md:px-16 lg:px-24 pb-8 md:pb-16 lg:pb-24">
       <div id="home">
         <div class="w-full h-[100vh] relative">
           <!-- BOTONES -->
@@ -31,129 +31,149 @@
           </div>
         </div>
       </div>
-      
 
-      
-      
-        <div class="p-6" id="recomendados">
-            <p class="text-3xl font-semibold text-primary">Recomendados</p>
-            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
-                
-              <div class="Card">
-                <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
-                <div class="w-full h-2/5 bg-secondary rounded-b-lg">
-                    <p class="text-white font-bold text-xl px-4 py-2">Norway</p>
-                    <p class="text-white px-4">Paisajes increíbles</p>
-                </div>
-              </div>
-            
-              <div class="Card">
-                <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
-                <div class="w-full h-2/5 bg-terciary rounded-b-lg">
-                    <p class="text-white font-bold text-xl px-4 py-2">New York</p>
-                    <p class="text-white px-4">La Gran Manzana</p>
-                </div>
-              </div>
-            
-              <div class="Card">
-                <div class="w-full h-3/5 rounded-t-lg bg-sanFrancisco bg-cover"></div>
-                <div class="w-full h-2/5 bg-secondary rounded-b-lg">
-                    <p class="text-white font-bold text-xl px-4 py-2">San Francisco</p>
-                    <p class="text-white px-4">El Puente Golden Gate</p>
-                </div>
-              </div>
-            
-              <div class="Card">
-                <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
-                <div class="w-full h-2/5 bg-terciary rounded-b-lg">
-                    <p class="text-white font-bold text-xl px-4 py-2">Seattle</p>
-                    <p class="text-white px-4">Ciudad Esmeralda</p>
-                </div>
-              </div>
-            
-              <div class="Card">
-                <div class="w-full h-3/5 rounded-t-lg bg-LA bg-cover"></div>
-                <div class="w-full h-2/5 bg-secondary rounded-b-lg">
-                    <p class="text-white font-bold text-xl px-4 py-2">Los Angeles</p>
-                    <p class="text-white px-4">La Ciudad de las Estrellas</p>
-                </div>
-              </div>
-            
-              <div class="Card">
-                <div class="w-full h-3/5 rounded-t-lg bg-miami bg-cover"></div>
-                <div class="w-full h-2/5 bg-terciary rounded-b-lg">
-                    <p class="text-white font-bold text-xl px-4 py-2">Miami</p>
-                    <p class="text-white px-4">Playas y Sol</p>
-                </div>
-              </div>
-            
-              <div class="Card">
-                <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
-                <div class="w-full h-2/5 bg-secondary rounded-b-lg">
-                    <p class="text-white font-bold text-xl px-4 py-2">Suiza</p>
-                    <p class="text-white px-4">Alpes Suizos</p>
-                </div>
-              </div>
-            
-              <div class="Card">
-                <div class="w-full h-3/5 rounded-t-lg bg-bali bg-cover"></div>
-                <div class="w-full h-2/5 bg-terciary rounded-b-lg">
-                    <p class="text-white font-bold text-xl px-4 py-2">Bali</p>
-                    <p class="text-white px-4">Isla de los Dioses</p>
-                </div>
-              </div>
-            
-              <div class="Card">
-                <div class="w-full h-3/5 rounded-t-lg bg-iceland bg-cover"></div>
-                <div class="w-full h-2/5 bg-secondary rounded-b-lg">
-                    <p class="text-white font-bold text-xl px-4 py-2">Islandia</p>
-                    <p class="text-white px-4">Tierra de Hielo y Fuego</p>
-                </div>
-              </div>
-
+      <!-- Sección Recomendados -->
+      <div class="p-6" id="recomendados">
+        <p class="text-3xl font-semibold text-primary text-center">Recomendados</p>
+        <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
+          
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
+            <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                <p class="text-white font-bold text-xl px-4 py-2">Norway</p>
+                <p class="text-white px-4">Paisajes increíbles</p>
             </div>
-        </div>
-        
-        <div class="px-16 h-full w-full pb-8 md:pb-16 lg:pb-24" id="rentas_destacadas">
-          <p class="text-3xl text-primary font-semibold pb-6 mt-6">Rentas Destacadas</p>
-         
-          <div class="w-full h-full grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 items-center justify-center">
-
-            <div class="w-full h-96 bg-chicago bg-cover rounded-2xl shadow-lg overflow-hidden relative">
-              <div class="w-full h-full bg-black bg-opacity-30 absolute top-0 left-0 rounded-2xl"></div>
-              <div class="p-6 z-10 relative text-white">
-                <p class="text-2xl font-bold">Chicago</p>
-                <p class="text-sm">2 Habitaciones, baño y cocina.</p>
-              </div>
-            </div>
-
-            <div class="w-full h-96 bg-LA bg-cover rounded-2xl shadow-lg overflow-hidden relative">
-                <div class="w-full h-full bg-black bg-opacity-30 absolute top-0 left-0 rounded-2xl"></div>
-                <div class="p-6 z-10 relative text-white">
-                    <p class="text-2xl font-bold">Los Angeles</p>
-                    <p class="text-sm">4 Habitaciones, 3 baños, cocina y alberca privada.</p>
-                </div>
-            </div>
-
-            <div class="w-full h-96 bg-miami bg-cover rounded-2xl shadow-lg overflow-hidden relative">
-              <div class="w-full h-full bg-black bg-opacity-30 absolute top-0 left-0 rounded-2xl"></div>
-              <div class="p-6 z-10 relative text-white">
-                <p class="text-2xl font-bold">Miami</p>
-                <p class="text-sm">4 Habitaciones, 3 baños, cocina y excelente vista al mar.</p>
-              </div>
-            </div>
-
-            <div class="w-full h-96 bg-bali bg-cover rounded-2xl shadow-lg overflow-hidden relative">
-              <div class="w-full h-full bg-black bg-opacity-30 absolute top-0 left-0 rounded-2xl"></div>
-              <div class="p-6 z-10 relative text-white">
-                <p class="text-2xl font-bold">Bali</p>
-                <p class="text-sm">2 Habitaciones, baño, cocina y piscina privada.</p>
-              </div>
-            </div>
-
           </div>
+
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-new_york bg-cover"></div>
+            <div class="w-full h-2/5 bg-terciary rounded-b-lg">
+                <p class="text-white font-bold text-xl px-4 py-2">New York</p>
+                <p class="text-white px-4">La Gran Manzana</p>
+            </div>
+          </div>
+
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-sanFrancisco bg-cover"></div>
+            <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                <p class="text-white font-bold text-xl px-4 py-2">San Francisco</p>
+                <p class="text-white px-4">El Puente Golden Gate</p>
+            </div>
+          </div>
+
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-seattle bg-cover"></div>
+            <div class="w-full h-2/5 bg-terciary rounded-b-lg">
+                <p class="text-white font-bold text-xl px-4 py-2">Seattle</p>
+                <p class="text-white px-4">Ciudad Esmeralda</p>
+            </div>
+          </div>
+
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-LA bg-cover"></div>
+            <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                <p class="text-white font-bold text-xl px-4 py-2">Los Angeles</p>
+                <p class="text-white px-4">La Ciudad de las Estrellas</p>
+            </div>
+          </div>
+
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-miami bg-cover"></div>
+            <div class="w-full h-2/5 bg-terciary rounded-b-lg">
+                <p class="text-white font-bold text-xl px-4 py-2">Miami</p>
+                <p class="text-white px-4">Playas y Sol</p>
+            </div>
+          </div>
+
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-switzerland bg-cover"></div>
+            <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                <p class="text-white font-bold text-xl px-4 py-2">Suiza</p>
+                <p class="text-white px-4">Alpes Suizos</p>
+            </div>
+          </div>
+
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-bali bg-cover"></div>
+            <div class="w-full h-2/5 bg-terciary rounded-b-lg">
+                <p class="text-white font-bold text-xl px-4 py-2">Bali</p>
+                <p class="text-white px-4">Isla de los Dioses</p>
+            </div>
+          </div>
+
+          <div class="Card">
+            <div class="w-full h-3/5 rounded-t-lg bg-iceland bg-cover"></div>
+            <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                <p class="text-white font-bold text-xl px-4 py-2">Islandia</p>
+                <p class="text-white px-4">Tierra de Hielo y Fuego</p>
+            </div>
+          </div>
+
         </div>
-        
+      </div>
+
+      <!-- Sección Rentas Destacadas -->
+      <div class="px-16 h-auto w-full pb-8 md:pb-16 lg:pb-24" id="rentas_destacadas">
+        <p class="text-3xl text-primary font-semibold pb-6 mt-6 text-center">Rentas Destacadas</p>
+        <div class="w-full h-full grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 items-center justify-center">
+
+          <div class="w-full h-96 bg-chicago bg-cover rounded-2xl shadow-lg overflow-hidden relative">
+            <div class="w-full h-full bg-black bg-opacity-30 absolute top-0 left-0 rounded-2xl"></div>
+            <div class="p-6 z-10 relative text-white">
+              <p class="text-2xl font-bold">Chicago</p>
+              <p class="text-sm">2 Habitaciones, baño y cocina.</p>
+            </div>
+          </div>
+
+          <div class="w-full h-96 bg-LA bg-cover rounded-2xl shadow-lg overflow-hidden relative">
+            <div class="w-full h-full bg-black bg-opacity-30 absolute top-0 left-0 rounded-2xl"></div>
+            <div class="p-6 z-10 relative text-white">
+              <p class="text-2xl font-bold">Los Angeles</p>
+              <p class="text-sm">4 Habitaciones, 3 baños, cocina y alberca privada.</p>
+            </div>
+          </div>
+
+          <div class="w-full h-96 bg-miami bg-cover rounded-2xl shadow-lg overflow-hidden relative">
+            <div class="w-full h-full bg-black bg-opacity-30 absolute top-0 left-0 rounded-2xl"></div>
+            <div class="p-6 z-10 relative text-white">
+              <p class="text-2xl font-bold">Miami</p>
+              <p class="text-sm">4 Habitaciones, 3 baños, cocina y excelente vista al mar.</p>
+            </div>
+          </div>
+
+          <div class="w-full h-96 bg-bali bg-cover rounded-2xl shadow-lg overflow-hidden relative">
+            <div class="w-full h-full bg-black bg-opacity-30 absolute top-0 left-0 rounded-2xl"></div>
+            <div class="p-6 z-10 relative text-white">
+              <p class="text-2xl font-bold">Bali</p>
+              <p class="text-sm">2 Habitaciones, baño, cocina y piscina privada.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Sección FAQS ajustada con el mismo ancho -->
+      <div class="px-16 w-full pb-8 md:pb-16 lg:pb-24 mt-6" id="faqs">
+        <p class="text-3xl text-primary font-semibold pb-1 text-center mt-6">FAQS</p>
+        <div class="w-full h-auto p-6 bg-white rounded-lg shadow-md px-6 flex flex-col space-y-4">
+          <div class="text-gray-700">
+            <p class="text-xl font-medium text-primary">Políticas de Cancelación</p>
+            <p class="text-md pt-2">Las reservas pueden ser canceladas sin penalización hasta 48 horas antes de la fecha de llegada. Si la cancelación se realiza dentro de las 48 horas previas a la llegada, se aplicará un cargo equivalente a la primera noche de estancia. En caso de no presentarse sin previo aviso, se cobrará el importe total de la reserva. Para realizar una cancelación, por favor contacta con nuestro equipo de atención al cliente a través de nuestro sitio web o llamando al número de soporte.</p>
+          </div>
+
+          <div class="text-gray-700">
+            <p class="text-xl font-medium text-primary">Políticas de Cancelación</p>
+            <p class="text-md pt-2">Las reservas pueden ser canceladas sin penalización hasta 48 horas antes de la fecha de llegada. Si la cancelación se realiza dentro de las 48 horas previas a la llegada, se aplicará un cargo equivalente a la primera noche de estancia. En caso de no presentarse sin previo aviso, se cobrará el importe total de la reserva. Para realizar una cancelación, por favor contacta con nuestro equipo de atención al cliente a través de nuestro sitio web o llamando al número de soporte.</p>
+          </div>
+
+          <div class="text-gray-700">
+            <p class="text-xl font-medium text-primary">Políticas de Cancelación</p>
+            <p class="text-md pt-2">Las reservas pueden ser canceladas sin penalización hasta 48 horas antes de la fecha de llegada. Si la cancelación se realiza dentro de las 48 horas previas a la llegada, se aplicará un cargo equivalente a la primera noche de estancia. En caso de no presentarse sin previo aviso, se cobrará el importe total de la reserva. Para realizar una cancelación, por favor contacta con nuestro equipo de atención al cliente a través de nuestro sitio web o llamando al número de soporte.</p>
+          </div>
+          
+        </div>
+      </div>
+      
     </section>
 
     <footer></footer>
